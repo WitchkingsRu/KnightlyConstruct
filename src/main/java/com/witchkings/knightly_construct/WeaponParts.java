@@ -18,7 +18,7 @@ import slimeknights.tconstruct.tools.stats.HeadMaterialStats;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class WeaponParts extends TinkerModule {
+public final class WeaponParts extends KCModule {
     public static final CreativeModeTab TAB_TOOL_PARTS = new SupplierCreativeTab(KnightlyConstruct.MOD_ID, "tool_parts", () -> {
         List<IMaterial> materials = new ArrayList<>(MaterialRegistry.getInstance().getVisibleMaterials());
         if (materials.isEmpty()) {

@@ -143,6 +143,11 @@ repositories {
         url 'https://dvs1.progwml6.com/files/maven'
     }
     maven {
+        name = "EpicKnights"
+        url = "https://s01.oss.sonatype.org/content/groups/public/"
+    }
+    maven {
+        name = "ClothConfig"
         url 'https://maven.shedaniel.me/'
     }
     // Put repositories for dependencies here
@@ -161,9 +166,16 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.2.10'
     compileOnly fg.deobf("slimeknights.mantle:Mantle:1.18.2-1.9.25")
     compileOnly fg.deobf("slimeknights.tconstruct:TConstruct:1.18.2-3.5.2.38")
+    //compileOnly fg.deobf ("io.github.magistu:1.18.2-epic-knights-forge:8.2")
+    //compileOnly fg.deobf("dev.architectury:architectury-forge:1.18.2-4.11.93")
+    //compileOnly fg.deobf ("me.shedaniel.cloth:cloth-config-forge:1.18.2-6.5.102")
 
     runtimeOnly fg.deobf("slimeknights.mantle:Mantle:1.18.2-1.9.25")
     runtimeOnly fg.deobf("slimeknights.tconstruct:TConstruct:1.18.2-3.5.2.38")
+    //runtimeOnly fg.deobf ("io.github.magistu:1.18.2-epic-knights-forge:8.2")
+    //runtimeOnly fg.deobf("dev.architectury:architectury-forge:1.18.2-4.11.93")
+    //runtimeOnly fg.deobf ("me.shedaniel.cloth:cloth-config-forge:1.18.2-6.5.102")
+
 
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
